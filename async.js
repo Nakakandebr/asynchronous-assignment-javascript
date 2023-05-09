@@ -1,11 +1,11 @@
 //Write an asynchronous function that accepts a message string and a delay
 //  time in milliseconds. The function should log the message to the console after the specified delay time.
 
-async function getMessage(message, delay) {
+async function getInfo(info, delay) {
     await new Promise(resolve => setTimeout(resolve, delay));
-    console.log(message);
+    console.log(info);
   }
-  getMessage("Hi Bridget , How is AchiraChix !", 2000);
+  getInfo("Hi Bridget , How is AchiraChix !", 2000);
 
 
 
