@@ -8,17 +8,18 @@ async function getMessage(message, delay) {
   getMessage("Hi Bridget , How is AchiraChix !", 2000);
 
 
-// You have an array of user IDs and a function getUserData(id) that returns a Promise with user data when given a user ID. Write an asynchronous function that fetches
+// You have an array of user IDs and a function getUserData(id) that returns a Promise with user data when given a user ID.
+//  Write an asynchronous function that fetches
 //  and logs the data for each user ID one by one, in sequence
   const userIds = [1, 2, 3, 4, 5];
-  async function fetchAndLogUserData() {
+  async function getUser(){
     for (const id of userIds) {
       const userData = await getUserData(id);
       console.log(userData);
     }
   }
   
-  fetchAndLogUserData();
+  getUser()
   // 
 // 
 // You have an asynchronous function performTask() that returns a Promise. The Promise resolves if the task is successful and rejects if 
